@@ -27,4 +27,4 @@ after_script:
 
 branches:
   only:
-    - sourceurcece
+    - source
