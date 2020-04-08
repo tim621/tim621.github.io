@@ -1,6 +1,6 @@
 language: node_js # 语言环境
 
-node_js: stable #稳定版
+node_js: node #稳定版
 
 # 安装依赖，Travis CI modejs环境默认有配置，写不写无所谓
 # install:
@@ -8,7 +8,7 @@ node_js: stable #稳定版
 
 # 构建前阶段
 before_script:
-  - git clone #克隆主题到虚拟机
+  - git clone -b theme git@github.com:tim621/tim612.github.io.git#克隆主题到虚拟机
 
 # 构建阶段
 script:
@@ -19,12 +19,12 @@ script:
 after_script:
   - cd ./public # 进入静态资源目录
   - git init # 初始化仓库
-  - git config user.name "TimmieWong" # 设置用户名
+  - git config user.name "tim612" # 设置用户名
   - git config user.email "647827157@qq.com" # 设置邮箱
   - git add . # 添加所以文件到缓冲区
   - git commit -m "Auto deploy blog pages" # 备注
-  - git push --force --quiet "https://${GH_TOKEN}@github.com//nettee.github.io" master:master
+  - git push --force --quiet "https://${GH_TOKEN}@github.com//tim612.github.io" master:master
 
 branches:
   only:
-    - Source
+    - sourceurcece
