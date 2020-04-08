@@ -6,8 +6,6 @@ cache: npm
 branches:
   only:
     - source # build master branch only
-before_script:
-  - git clone theme git@github.com:tim621/tim612.github.io.git themes/Volantis
 script:
   - hexo generate # generate static files
 deploy:
@@ -28,6 +26,12 @@ after_script:
   - git add . # 添加所以文件到缓冲区
   - git commit -m "Auto deploy blog pages" # 备注
   - git push --force --quiet "https://${GH_TOKEN}@github.com//tim612.github.io" master:master
+
+branches:
+  only:
+    - source
+
+cece/${GH_TOKEN}@github.com//tim612.github.io" master:master
 
 branches:
   only:
