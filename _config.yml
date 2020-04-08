@@ -100,7 +100,8 @@ theme: volantis
 deploy:
   type: ''
 
-# Theme config
+  
+  me config
 theme_config:
   
   
