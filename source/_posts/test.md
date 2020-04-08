@@ -1,7 +1,7 @@
 ---
 title: test
 date: 2020-04-08 18:30:52
-tags:
+tags: test
 ---
 __Advertisement :)__
 
