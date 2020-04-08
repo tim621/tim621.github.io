@@ -8,7 +8,7 @@ node_js: node #稳定版
 
 # 构建前阶段
 before_script:
-  - git clone -b theme git@github.com:tim621/tim612.github.io.git#克隆主题到虚拟机
+  - git clone -b theme git@github.com:tim621/tim612.github.io.git themes/volantis #克隆主题到虚拟机
 
 # 构建阶段
 script:
