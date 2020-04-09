@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://tim612.github.io
+url: http://tim621.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -99,10 +99,11 @@ theme: volantis
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/tim621/tim612.github.io
-  # example, https://github.com/hexojs/hexojs.github.io
-  branch: gh-pages,
+  repo: git@github.com:tim621/tim621.github.io.git
+  # example, git://github.com/hexojs/hexojs.github.io
+  branch: master
   
 
 
   
+    
